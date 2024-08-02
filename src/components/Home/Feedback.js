@@ -101,6 +101,7 @@ const ReviewImage = styled.img``;
 const FeedbackTitle = styled.h1`
   letter-spacing: 3px;
   font-size: 1.5rem;
+  margin:0;
 `;
 
 const FeedbackName = styled.h2`
@@ -112,11 +113,10 @@ const FeedbackDescription = styled.p`
 `;
 
 const FeedbackContainer = styled.div`
-  padding: 3% 3% 10% ;
+  padding: 0% 3% 10% ;
 
       @media (max-width: 480px) {
-      padding: 10% 0;
-
+        padding: 12% 3%;
 }
 `;
 
@@ -124,6 +124,7 @@ const FeedbackHeader = styled.div`
   display: flex;
   gap: 10px;
   align-items: center;
+  margin-bottom:3%;
 `;
 
 const Feed = styled.div`

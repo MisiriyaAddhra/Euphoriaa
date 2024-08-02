@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Helmet} from "react-helmet";
 import SlideCard from './SliderCard';
 import NewArrival from './NewArrival';
 import Card from './Card';
@@ -9,10 +10,18 @@ import Womens from './Womens';
 import BrandBox from './BrandsBox';
 import Limelight from './Limelight';
 import Feedback from './Feedback';
+import myShop from '../../assets/shop.png';
+
 
 const Home = ({ toggleWishlist, wishlist,searchQuery }) => {
   return (
     <HomeSection>
+       <Helmet>
+                <meta charSet="utf-8" />
+                <title>Euphoria - Your shopping Destination</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+                <link rel="icon" href={myShop} type="image/png" />
+          </Helmet>
       <SlideCard />
       <Container>
         <Card />

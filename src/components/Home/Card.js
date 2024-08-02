@@ -29,7 +29,7 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 gap: 10%;
-padding: 5% 3% 0;
+padding:3%;
 
     @media (max-width: 768px) {
       gap:5%;
@@ -51,7 +51,7 @@ height: 40vh;
 border-radius: 25px;
 
     @media (max-width: 980px) {
-      height: 25vh;
+      height: 30vh;
 }
       @media (max-width: 640px) {
       width: 100%;
@@ -64,7 +64,7 @@ background: url(${require('../../assets/bg-3.jpg')}) top/cover no-repeat;
 height: 40vh;
 border-radius: 25px;
     @media (max-width: 980px) {
-      height: 25vh;
+      height: 30vh;
 }
       @media (max-width: 640px) {
       width: 100%;

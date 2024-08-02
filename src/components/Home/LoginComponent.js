@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import {Helmet} from "react-helmet";
+import myFavicon from '../../assets/user-plus-solid.svg';
 
-// Styled Components
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -103,7 +105,7 @@ const LoginComponent = ({ token, username, handleLogin }) => {
       const data = await response.json();
       handleLogin(data.token, inputUsername);
 
-      // You might want to redirect the user or update the app state here
+
       console.log('Login successful');
     } catch (err) {
       setError('Login failed. Please check your credentials.');
@@ -115,6 +117,12 @@ const LoginComponent = ({ token, username, handleLogin }) => {
 
   return (
     <Container>
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>Euphoria - Login</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+                <link rel="icon" href={myFavicon} type="image/png" />
+          </Helmet>
       {!token ? (
         <Form onSubmit={handleLoginSubmit}>
           <div>

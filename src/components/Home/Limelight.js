@@ -124,18 +124,24 @@ const Limelight = ({ toggleWishlist, wishlist }) => {
 };
 
 const LimeContainer = styled.div`
-    padding: 3% 3% 0;
+    padding: 3% 3% 0 3%;
+
+   @media (max-width: 480px) {
+     padding-bottom:15px;     
+ }
 `;
 
 const Limelights = styled.div`
     display: flex;
     gap: 10px;
     align-items: center;
+    margin-bottom:3%;
 `;
 
 const LimeTitle = styled.h1`
     letter-spacing: 3px;
     font-size: 1.5rem;
+    margin:0;
 `;
 
 const Block = styled.span`
@@ -227,7 +233,7 @@ const ProductImageContainer = styled.div`
 border: 1px solid #ddd;
 border-radius: 8px;
 overflow: hidden;
-height: 50vh;
+height: 52vh;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -236,12 +242,6 @@ width: 82%;
 padding: 5%;
 width: 80%;
 
-    @media (max-width: 540px) {
-        height:40vh;
-}
-    @media (max-width: 360px) {
-        height:60vh;
-}
 `
 
 const ProductImage = styled.img`

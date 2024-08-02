@@ -36,8 +36,8 @@ const BrandBox=()=> {
 const BrandsBox = styled.div`
 background:#323232;
 padding:5%;
- border-radius: 15px;
- margin: 50px 3%;
+border-radius: 15px;
+margin: auto 3% ;
 
 `;
 

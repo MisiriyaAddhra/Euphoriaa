@@ -22,10 +22,10 @@ const Banner = () => {
 
 const FashionBanner = styled.div`
 display: flex;
-padding: 3% 3% 0;
+padding: 0 3% ;
 
      @media (max-width: 480px) {
-     padding: 12% 0 0;
+    //  padding: 12% 0 0;
 }
 `
 
